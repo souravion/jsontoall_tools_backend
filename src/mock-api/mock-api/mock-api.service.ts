@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { faker } from '@faker-js/faker';
-import { generateFakeValue } from 'src/common/utils/faker.util';
+import { generateFakeValue } from '../../common/utils/faker.util';
 
 @Injectable()
 export class MockApiService {
