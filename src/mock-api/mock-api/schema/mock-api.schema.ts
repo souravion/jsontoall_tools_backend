@@ -33,7 +33,7 @@ export class MockApi {
 
  
 export const MockApiSchema = SchemaFactory.createForClass(MockApi);
-MockApiSchema.index({ "createdAt": 1 }, { expireAfterSeconds: 60 }); // Expire logs after 24 hours
+MockApiSchema.index({ "createdAt": 1 }, { expireAfterSeconds: 86400 }); // Expire logs after 24 hours
 
 export type MockApiDocument = HydratedDocument<MockApi>;
 
