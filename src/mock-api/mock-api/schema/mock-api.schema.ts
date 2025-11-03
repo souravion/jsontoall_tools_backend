@@ -21,8 +21,9 @@ export class MockApi {
   records?: number;
   // TTL index → document auto-deletes after 24h
   // @Prop({ default: Date.now, expires: 60 * 60 * 24 })
-  @Prop({ default: Date.now}) // 120 seconds = 2 minutes
-  expiresAt: Date;
+  @Prop({ type: Date, default: Date.now })
+  createdAt: Date;
+
 
   @Prop({ default: 0 })
   hitCount: number;
